@@ -600,6 +600,174 @@ a {
 
 
 /* ============================================================
+   DRIVER ONBOARDING
+   ============================================================ */
+.driver-onboarding {
+    padding: 6rem 2rem;
+    background: var(--white);
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.driver-onboarding-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.driver-content .section-label {
+    display: block;
+    text-align: left;
+}
+
+.driver-content h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.driver-content h2 span {
+    color: var(--primary);
+}
+
+.driver-description {
+    font-size: 1.1rem;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 480px;
+}
+
+.driver-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.driver-features li {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.driver-feature-icon {
+    width: 48px;
+    height: 48px;
+    background: #fef2f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.driver-feature-icon i {
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.driver-feature-text h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.3rem;
+}
+
+.driver-feature-text p {
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.driver-qr {
+    display: flex;
+    justify-content: center;
+}
+
+.driver-qr-card {
+    background: var(--white);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+}
+
+.driver-qr-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0 auto 1.25rem;
+    border-radius: 8px;
+}
+
+.driver-qr-caption {
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .driver-onboarding-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .driver-content {
+        order: 1;
+        text-align: center;
+    }
+
+    .driver-content .section-label {
+        text-align: center;
+    }
+
+    .driver-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .driver-features {
+        text-align: left;
+    }
+
+    .driver-qr {
+        order: 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .driver-onboarding {
+        padding: 4rem 1rem;
+    }
+
+    .driver-features {
+        gap: 1.25rem;
+    }
+
+    .driver-feature-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .driver-qr-card {
+        padding: 1.5rem;
+    }
+}
+
+
+/* ============================================================
    DAVREN ABOUT SECTION
    ============================================================ */
 .davren-about-section {
